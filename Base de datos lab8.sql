@@ -1,0 +1,14 @@
+CREATE DATABASE lab8db;
+
+USE lab8db;
+
+
+CREATE TABLE users (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    username NVARCHAR(50) NOT NULL,
+    email NVARCHAR(100) UNIQUE NOT NULL,
+    password NVARCHAR(255) NOT NULL
+);
+
+USE lab8db;
+SELECT * FROM users;
